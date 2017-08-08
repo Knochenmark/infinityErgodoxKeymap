@@ -11,7 +11,12 @@ I went with the default 3 base layers for now which are `default`, `symbols` and
 
 ![keyboard-layout](keyboard-layout.jpg)
 
+Default: Black
+Symbols: Green
+Media: Red
+
 ## Default
+
 Pretty much the typical ISO German Layout except the thumb cluster obviously.
 I felt like I press space mostly with left thumb, so I tried to keep it there for now.
 Since I moved the umlauts to their typical position, the right most row on the right hand had to move
@@ -48,9 +53,14 @@ $ sudo make ergodox-infinity-knochenmark-dfu-util MASTER=right
 - Test the layout under Windows (might require a seperate Windows layer)
 - Since the Arrow cluster was moved to a layer, 3 keys on bottom right corner are free now.
 Maybe add Copy/Paste/Cut or Undo Macros there.
-- ~~Add images of layout using keyboard layouter or the ergodox ez editor~~
+- Try LCtrl at Capslock position (Tap Caps/Hold Ctrl)
+- Move the Mouse Acceleration Keys somewhere else, because they overlap the Gui, Alt & L1 Button
+- ~~Add an image of they keyboard layout~~
 - ~~Consider repositioning of Home/End keys~~
-- ~~Print a image of the layout~~
+
+# Changelog
+
+- Moved the Arrow-Cluster together with Home and End to another layer and closer to right hands home row. It felt uncomfortable always reaching down to the bottom right corner. Felt even worse when I went back to a normal keyboard. Let's see how the layer cluster works out.
 
 # Useful Resources
 
@@ -59,7 +69,3 @@ Maybe add Copy/Paste/Cut or Undo Macros there.
 [Building the QMK Firmware Documentation](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox)
 
 [QMK Keycodes](https://docs.qmk.fm/basic_keycodes.html)
-
-# Changelog
-
-- Moved the Arrow-Cluster together with Home and End to another layer and closer to right hands home row. It felt uncomfortable always reaching down to the bottom right corner. Felt even worse when I went back to a normal keyboard. Let's see how the layer cluster works out.
