@@ -9,8 +9,13 @@ Noticable is this especially for the umlauts `ä`,`ö` and `ü` and also the `ß
 
 I went with the default 3 base layers for now which are `default`, `symbols` and `media`.
 
+![keyboard-layout](keyboard-layout.jpg)
+
 ## Default
-_ToDo: add default layer description_
+Pretty much the typical ISO German Layout except the thumb cluster obviously.
+I felt like I press space mostly with left thumb, so I tried to keep it there for now.
+Since I moved the umlauts to their typical position, the right most row on the right hand had to move
+into the thumb cluster for the most part.
 
 ## Symbols
 _ToDo: add symbol layer description_
@@ -39,12 +44,13 @@ $ sudo make ergodox-infinity-knochenmark-dfu-util MASTER=right
 
 # ToDo's
 
-- Add images of layout using keyboard layouter or the ergodox ez editor
-- Test the layout under Windows (might require a seperate Windows layer)
-- Consider repositioning of Home/End keys
 - Gaming layer with WASD offset by 1 to the right and function keys on base layer
-- Print a image of the layout
-- Add goals section
+- Test the layout under Windows (might require a seperate Windows layer)
+- Since the Arrow cluster was moved to a layer, 3 keys on bottom right corner are free now.
+Maybe add Copy/Paste/Cut or Undo Macros there.
+- ~~Add images of layout using keyboard layouter or the ergodox ez editor~~
+- ~~Consider repositioning of Home/End keys~~
+- ~~Print a image of the layout~~
 
 # Useful Resources
 
@@ -53,3 +59,7 @@ $ sudo make ergodox-infinity-knochenmark-dfu-util MASTER=right
 [Building the QMK Firmware Documentation](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ergodox)
 
 [QMK Keycodes](https://docs.qmk.fm/basic_keycodes.html)
+
+# Changelog
+
+- Moved the Arrow-Cluster together with Home and End to another layer and closer to right hands home row. It felt uncomfortable always reaching down to the bottom right corner. Felt even worse when I went back to a normal keyboard. Let's see how the layer cluster works out.
