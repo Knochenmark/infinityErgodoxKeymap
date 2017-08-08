@@ -11,9 +11,10 @@ I went with the default 3 base layers for now which are `default`, `symbols` and
 
 ![keyboard-layout](keyboard-layout.jpg)
 
-<span style="color:red">**Media**</span>
 Default: Black
+
 Symbols: Green
+
 Media: Red
 
 ## Default
