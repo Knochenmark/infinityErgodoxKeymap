@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Also make sure that the buffer passed to state->layer_text remains valid until the previous animation is
 // stopped. This can be done by either double buffering it or by using constant strings
 static void get_visualizer_layer_and_color(visualizer_state_t* state) {
-    uint8_t saturation = 100;
+    uint8_t saturation = 155;
     if (state->status.leds & (1u << USB_LED_CAPS_LOCK)) {
         saturation = 255;
     }
@@ -32,11 +32,11 @@ static void get_visualizer_layer_and_color(visualizer_state_t* state) {
         state->layer_text = "Media & Mouse";
     }
     else if (state->status.layer & 0x2) {
-        state->target_lcd_color = LCD_COLOR(168, saturation, 0xFF);
-        state->layer_text = "Symbol";
+        state->target_lcd_color = LCD_COLOR(84, saturation, 0xFF);
+        state->layer_text = "Hack the planet";
     }
     else {
-        state->target_lcd_color = LCD_COLOR(84, saturation, 0xFF);
-        state->layer_text = "Default";
+        state->target_lcd_color = LCD_COLOR(168, saturation, 0xFF);
+        state->layer_text = "Knochenmark";
     }
 }
